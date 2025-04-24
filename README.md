@@ -12,3 +12,6 @@
 - Successfully add microphone input
 - Gather test songs for the karaoke machine
 - Determine logic for PyGame and mic input reading
+
+# Dependencies
+- PyAudio (portaudio needed for install as well)

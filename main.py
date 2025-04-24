@@ -1,5 +1,8 @@
+from classes import karaoke
+
 def main():
-    print("hello world")
+    karaoke.test()
+    pass
     
 if __name__ == '__main__':
     main()
