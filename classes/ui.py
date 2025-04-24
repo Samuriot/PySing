@@ -13,12 +13,18 @@ font = pygame.font.Font('freesansbold.ttf', 32)
 running = True
 text = updateText("PySing")
 
+pygame.mixer.pre_init()
+pygame.mixer.init()
+
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
         if event.type == pygame.MOUSEBUTTONDOWN:
-            text = updateText("you clicked down")
+            text = updateText("you clicked down and played music")
+            pygame.mixer.music.load("music/dabin.mp3")
+            pygame.mixer.music.play()
         if event.type == pygame.MOUSEBUTTONUP:
             text = updateText("text reset")
     
